@@ -1,0 +1,50 @@
+<view class="main" style="background-image: url( {{ night? 'https://zhiyaya-1258146317.cos.ap-shanghai.myqcloud.com/background_night.png' :  'https://zhiyaya-1258146317.cos.ap-shanghai.myqcloud.com/background.png' }});background-repeat:no-repeat; background-size:100% 100%;-moz-background-size:100% 100%;">
+  <view class="label-container">
+    <view class="single-label-container">
+      <image class="label-style" src="{{ night? '/images/label_light_night.png':'/images/label_light.png'}}"></image>
+      <text class="label-data" style="color: {{night ? '#ffffff':'#693210'}};">{{light_data}}</text>
+      <text class="label-title" style="color: {{night ? '#ffffff':'#693210'}};">光照</text>
+    </view>
+    <view class="single-label-container">
+      <image class="label-style" src="{{ night? '/images/label_temp_night.png':'/images/label_temp.png'}}"></image>
+      <text class="label-data" style="color: {{night ? '#ffffff':'#693210'}};">{{temp_data}}</text>
+      <text class="label-title" style="color: {{night ? '#ffffff':'#693210'}};">温度</text>
+    </view>
+    <view class="single-label-container">
+      <image class="label-style" src="{{ night? '/images/label_water_night.png':'/images/label_water.png'}}"></image>
+      <text class="label-data" style="color: {{night ? '#ffffff':'#693210'}};">{{water_data}}</text>
+      <text class="label-title" style="color: {{night ? '#ffffff':'#693210'}};">水分</text>
+    </view>
+    <view class="single-label-container">
+      <image class="label-style" src="{{ night? '/images/label_air_night.png':'/images/label_air.png'}}"></image>
+      <text class="label-data" style="color: {{night ? '#ffffff':'#693210'}};">{{air_data}}</text>
+      <text class="label-title" style="color: {{night ? '#ffffff':'#693210'}};">空气</text>
+    </view>
+  </view>
+  <view class='dialog' style="background-color: {{night ? '#a7b9f3':'#f1d8a7'}};">
+    <text class="label-title" style="color: {{night ? '#ffffff':'#693210'}};">{{paperwork}}</text>
+  </view>
+  <view class="pic-container">
+    <image hidden="{{j!=0||status!=0}}" class="sound-style" src="/images/sleep0.png"></image>
+    <image hidden="{{j!=1||status!=0}}" class="sound-style" src="/images/sleep1.png"></image>
+    <image hidden="{{j!=2||status!=0}}" class="sound-style" src="/images/sleep2.png"></image>
+    <image hidden="{{j!=3||status!=0}}" class="sound-style" src="/images/sleep3.png"></image>
+    <image hidden="{{j!=4||status!=0}}" class="sound-style" src="/images/sleep4.png"></image>
+    <image hidden="{{j!=5||status!=0}}" class="sound-style" src="/images/sleep5.png"></image>
+    <image hidden="{{j!=6||status!=0}}" class="sound-style" src="/images/sleep4.png"></image>
+    <image hidden="{{j!=7||status!=0}}" class="sound-style" src="/images/sleep3.png"></image>
+    <image hidden="{{j!=8||status!=0}}" class="sound-style" src="/images/sleep2.png"></image>
+    <image hidden="{{j!=9||status!=0}}" class="sound-style" src="/images/sleep1.png"></image>
+    <image hidden="{{j!=0||status!=1}}" class="sound-style" src="/images/blink0.png"></image>
+    <image hidden="{{j!=1||status!=1}}" class="sound-style" src="/images/blink1.png"></image>
+    <image hidden="{{j!=2||status!=1}}" class="sound-style" src="/images/blink2.png"></image>
+    <image hidden="{{j!=3||status!=1}}" class="sound-style" src="/images/blink3.png"></image>
+    <image hidden="{{j!=4||status!=1}}" class="sound-style" src="/images/blink4.png"></image>
+    <image hidden="{{j!=5||status!=1}}" class="sound-style" src="/images/blink5.png"></image>
+    <image hidden="{{j!=6||status!=1}}" class="sound-style" src="/images/blink6.png"></image>
+    <image hidden="{{j!=7||status!=1}}" class="sound-style" src="/images/blink7.png"></image>
+    <image hidden="{{j!=8||status!=1}}" class="sound-style" src="/images/blink8.png"></image>
+    <image hidden="{{j!=0||status!=2}}" class="sound-style" src="/images/excite0.png"></image>
+    <image hidden="{{j!=1||status!=2}}" class="sound-style" src="/images/excite1.png"></image>
+  </view>
+</view>
